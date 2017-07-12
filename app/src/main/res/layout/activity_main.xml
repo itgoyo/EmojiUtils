@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="kotlinandroid.net.emojiutils.MainActivity">
+
+    <EditText
+        android:id="@+id/et_input"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"/>
+
+    <Button
+        android:id="@+id/bt"
+        android:text="Test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="原始输入："
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/before"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="过滤输出："
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/after"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:text="不支持输入Emoji表情自定义EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+        <kotlinandroid.net.library.ContainsEmojiEditText
+            android:id="@+id/emoji_et"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
