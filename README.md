@@ -44,3 +44,4 @@ Emoji表情字符集 http://apps.timwhitlock.info/emoji/tables/unicode
 ```
 
 #### [彻底搞懂字符编码(unicode,mbcs,utf-8,utf-16,utf-32,big endian,little endian...)](http://blog.csdn.net/haiross/article/details/46360021)
+
