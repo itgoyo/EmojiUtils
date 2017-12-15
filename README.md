@@ -26,7 +26,7 @@ Emoji表情字符集 http://apps.timwhitlock.info/emoji/tables/unicode
 根据以上整理出范围，能过滤掉Emoji表情，还有一些个别的四字节字符。
 
 ```
-((first == 0x0) ||
+!((first == 0x0) ||
                         (first == 0x9) ||
                         (first == 0xA) ||
                         (first == 0xD) ||
